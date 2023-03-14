@@ -1,0 +1,10 @@
+C:\Users\Drewm\source\repos\Sprint2\Sprint2\obj\Debug\Sprint2.csproj.CoreCompileInputs.cache
+C:\Users\Drewm\source\repos\Sprint2\Sprint2\bin\Debug\Sprint2.exe.config
+C:\Users\Drewm\source\repos\Sprint2\Sprint2\bin\Debug\Sprint2.exe
+C:\Users\Drewm\source\repos\Sprint2\Sprint2\bin\Debug\Sprint2.pdb
+C:\Users\Drewm\source\repos\Sprint2\Sprint2\obj\Debug\Sprint2.exe
+C:\Users\Drewm\source\repos\Sprint2\Sprint2\obj\Debug\Sprint2.pdb
+C:\Users\Drewm\source\repos\Sprint2\Sprint2\bin\Debug\Json.Net.dll
+C:\Users\Drewm\source\repos\Sprint2\Sprint2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Drewm\source\repos\Sprint2\Sprint2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Drewm\source\repos\Sprint2\Sprint2\obj\Debug\Sprint2.csproj.CopyComplete
