@@ -1,0 +1,90 @@
+﻿{
+  "Rooms": {
+    "Entrance": "Fight random monsters",
+    "Mob Room": "Fight random monsters",
+    "Treasure Room": "Get very good rewards and items",
+    "Boss Room": "Fight the final boss"
+  },
+  "Weapons": {
+    "Longsword": {
+      "handedness": 2,
+      "damage": "5",
+      "type": "Melee"
+    },
+    "Bow": {
+      "handedness": 3,
+      "damage": "5",
+      "type": "Range"
+    },
+    "Spear": {
+      "handedness": 2,
+      "damage": "5",
+      "type": "Melee"
+    },
+    "Shortsword": {
+      "handedness": 1,
+      "damage": "3.5",
+      "type": "Melee"
+    }
+  },
+  "Mobs": {
+    "Zombie": {
+      "hp": 10,
+      "damage": 2
+    },
+    "Mage": {
+      "hp": 4,
+      "damage": 4
+    },
+    "Archer": {
+      "hp": 7,
+      "damage": 3
+    },
+    "Dragon Boss": {
+      "hp": 50,
+      "damage": 8
+    }
+  },
+  "Items": {
+    "Arrow": {
+      "description": "Required item to shoot with the bow",
+      "count": 16
+    },
+    "Shield": {
+      "description": "25% chance to block an attack, can only be used with a 1 handed item",
+      "count": 1
+    },
+    "Dynamite": {
+      "description": "Does 8 AOE Damage",
+      "count": 2
+    },
+    "Ring of Attack": {
+      "description": "Adds 2.5 damage to all attacks",
+      "count": 1
+    }
+  },
+  "Treasure": {
+    "Gold": {
+      "description": "Money",
+      "count": 10
+    },
+    "Item Upgrade Scroll": {
+      "description": "Upgrade an item's effects by 20%, Potion's effects by 75% at an upgrade station",
+      "count": 2
+    },
+    "Life Saver": {
+      "description": "Restores 20% health instead of dying",
+      "count": 1
+    }
+  },
+  "Potions": {
+    "Healing Potion": {
+      "description": "Heals 10hp",
+      "count": 2
+    },
+    "Strength Potion": {
+      "description": "Next 3 attacks do double damage",
+      "count": 2
+    }
+  }
+}

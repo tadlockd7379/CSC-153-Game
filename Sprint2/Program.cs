@@ -9,9 +9,11 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.IO;
+using Sprint2;
 
 namespace Sprint_2
 {
+
     class Program
     {
         static JObject variables;
@@ -19,15 +21,16 @@ namespace Sprint_2
         static void Main(string[] args)
         {
             FormVariables();
+
             Menu("showOptions");
         }
 
         static void FormVariables()
         {
-            using (StreamReader file = File.OpenText(@"../../variables.json"))
+            using (StreamReader file = File.OpenText(@"variables.json"))
             using (JsonTextReader reader = new JsonTextReader(file))
             {
-                variables = (JObject) JToken.ReadFrom(reader);
+                variables = (JObject)JToken.ReadFrom(reader);
             }
         }
 
@@ -38,6 +41,7 @@ namespace Sprint_2
                 Console.WriteLine("----------------");
                 Console.WriteLine("Options");
                 Console.WriteLine("----------------");
+                Console.WriteLine("> Combat"); // temporary combat demo
                 Console.WriteLine("> Rooms");
                 Console.WriteLine("> Weapons");
                 Console.WriteLine("> Potions");
@@ -49,6 +53,16 @@ namespace Sprint_2
             }
 
             string choice = Console.ReadLine();
+
+            if (choice == "Combat") // temporary combat demo
+            {
+                Character player = new Character("Player", 100, 5);
+                Character enemy = new Character("Enemy", 100, 5);
+                Combat combat = new Combat(player, enemy);
+                combat.Start();
+                Menu("showOptions");
+            }
+
             bool input = MenuInput(choice);
             if (input == false)
             {
@@ -124,7 +138,7 @@ namespace Sprint_2
                     Console.WriteLine(value);
                     Console.WriteLine("------ " + input + "------");
                     SubMenu(token, "");
-                } 
+                }
                 else
                 {
                     return false;
