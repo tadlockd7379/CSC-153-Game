@@ -1,0 +1,18 @@
+﻿{
+  "Zombie": {
+    "hp": 10,
+    "damage": 2
+  },
+  "Mage": {
+    "hp": 4,
+    "damage": 4
+  },
+  "Archer": {
+    "hp": 7,
+    "damage": 3
+  },
+  "Dragon Boss": {
+    "hp": 50,
+    "damage": 8
+  }
+}

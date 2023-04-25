@@ -1,0 +1,10 @@
+﻿{
+  "Healing Potion": {
+    "description": "Heals 10hp",
+    "uses": 2
+  },
+  "Strength Potion": {
+    "description": "Next 3 attacks do double damage",
+    "uses": 2
+  }
+}

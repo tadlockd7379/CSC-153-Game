@@ -1,0 +1,18 @@
+﻿{
+  "Arrow": {
+    "description": "Required item to shoot with the bow",
+    "count": 16
+  },
+  "Shield": {
+    "description": "25% chance to block an attack, can only be used with a 1 handed item",
+    "count": 1
+  },
+  "Dynamite": {
+    "description": "Does 8 AOE Damage",
+    "count": 2
+  },
+  "Ring of Attack": {
+    "description": "Adds 2.5 damage to all attacks",
+    "count": 1
+  }
+}

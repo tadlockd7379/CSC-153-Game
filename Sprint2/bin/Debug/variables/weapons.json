@@ -1,0 +1,22 @@
+﻿{
+  "Longsword": {
+    "handedness": 2,
+    "damage": "5",
+    "type": "Melee"
+  },
+  "Bow": {
+    "handedness": 2,
+    "damage": "5",
+    "type": "Range"
+  },
+  "Spear": {
+    "handedness": 2,
+    "damage": "5",
+    "type": "Melee"
+  },
+  "Shortsword": {
+    "handedness": 1,
+    "damage": "3.5",
+    "type": "Melee"
+  }
+}

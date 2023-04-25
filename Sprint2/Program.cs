@@ -16,25 +16,69 @@ namespace Sprint_2
 
     class Program
     {
-        static JObject variables;
+        static int currentRoom = 0;
 
         static void Main(string[] args)
         {
-            FormVariables();
+            Console.WriteLine("Welcome to game!");
+            new World();
 
-            Menu("showOptions");
+            Input();
+            //FormVariables();
+
+            //Menu("showOptions");
         }
 
-        static void FormVariables()
+        static void Input()
         {
-            using (StreamReader file = File.OpenText(@"variables.json"))
-            using (JsonTextReader reader = new JsonTextReader(file))
-            {
-                variables = (JObject)JToken.ReadFrom(reader);
-            }
-        }
+            Console.Write("Input (\"Keywords\"/\"North\"/\"South\"/\"Weapons\"/\"Spear\"/etc.): ");
+            string input = Console.ReadLine().ToLower();
 
-        static void Menu(string option)
+            if (input == "north" || input == "n")
+            {
+                if (currentRoom == World.roomsArray.Length - 1)
+                {
+                    Console.WriteLine("You've already reached the final room.");
+                }
+                else
+                {
+                    currentRoom++;
+                    Console.WriteLine(World.roomsArray[currentRoom]);
+                }
+            }
+            else if (input == "south" || input == "s")
+            {
+                if (currentRoom == 0)
+                {
+                    Console.WriteLine("You're already at the first room");
+                }
+                else
+                {
+                    currentRoom--;
+                    Console.WriteLine(World.roomsArray[currentRoom]);
+                }
+            }
+            else
+            {
+                if (World.keywords.ContainsKey(input))
+                {
+                    World.keywords.TryGetValue(input, out string response);
+                    Console.WriteLine(response);
+                }
+                else
+                {
+                    Console.WriteLine("Unknown Input!");
+                }
+            }
+
+
+            Input();
+        }
+    }
+}
+
+        /*
+        void Menu(string option)
         {
             if (option == "showOptions")
             {
@@ -71,7 +115,7 @@ namespace Sprint_2
             }
         }
 
-        static bool MenuInput(string input)
+        bool MenuInput(string input)
         {
             if (input.ToLower() == "exit")
             {
@@ -92,7 +136,7 @@ namespace Sprint_2
             return true;
         }
 
-        static bool SubMenu(JToken token, string options)
+        bool SubMenu(JToken token, string options)
         {
             if (options == "showOptions")
             {
@@ -149,3 +193,4 @@ namespace Sprint_2
         }
     }
 }
+        */

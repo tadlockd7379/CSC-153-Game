@@ -1,0 +1,14 @@
+﻿{
+  "Gold": {
+    "description": "Money",
+    "count": 10
+  },
+  "Item Upgrade Scroll": {
+    "description": "Upgrade an item's effects by 20%, Potion's effects by 75% at an upgrade station",
+    "count": 2
+  },
+  "Life Saver": {
+    "description": "Restores 20% health instead of dying",
+    "count": 1
+  }
+}
